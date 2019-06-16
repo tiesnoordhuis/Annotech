@@ -1,5 +1,5 @@
 import React from "react"
-import LinkOffsite from "./linkOffsite"
+import Links from "./links"
 import Jumbotron from "react-bootstrap/Jumbotron"
 
 export default class Main extends React.Component {
@@ -25,20 +25,11 @@ export default class Main extends React.Component {
                         <li>contract onderhoud, in werkplaats en op locatie</li>
                         </ul>
                     </p>
-                    <p class="lead">
-                        Voor informatie over activiteiten dochter ondernemingen:
-                        <ul>
-                        <li>
-                            <LinkOffsite linkObject={{"title": "Rolas", "url": "https://www.rolas.nl/"}} /> 
-                        </li>
-                        <li>
-                            <LinkOffsite linkObject={{"title": "Oosterhuis", "url": "https://www.oosterhuistechniek.nl/"}} /> 
-                        </li>
-                        </ul>
-                    </p>
+                    
                 </div>
             </Jumbotron>
             </div>
+            <Links />
         </div>
       );
     }

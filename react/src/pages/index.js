@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import Main from "../components/main"
 
 export default () => (
-  <div style={{ color: `teal` }}>
+  <div>
     <Head title={"Annotech"} />
     <Header />
 
