@@ -1,9 +1,8 @@
 import React from "react"
-import LinksTitle from "./LinksTitle"
+import LinksTitle from "./linksTitle"
 import LinkOffsite from "./linkOffsite"
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
-import "../../public/css/styleties.css"
 
 export default class Links extends React.Component {
     render() {
