@@ -17,7 +17,11 @@ export default class Links extends React.Component {
                     "url": "https://www.rolas.nl/",
                     "background": "https://www.rolas.nl/wp-content/uploads/cropped-Rolas-logo-square-192x192.jpg",
                 }} /> 
-                <LinkOffsite linkObject={{"title": "Oosterhuis", "url": "https://www.oosterhuistechniek.nl/"}} />                 
+                <LinkOffsite linkObject={{
+                  "title": "Oosterhuis", 
+                  "url": "https://www.oosterhuistechniek.nl/",
+                  "background": "https://www.oosterhuistechniek.nl/wp-content/themes/themifyflow-child/afbeeldingen/logo.png",
+                }} />                 
             </Row>
         </Container>
       );
