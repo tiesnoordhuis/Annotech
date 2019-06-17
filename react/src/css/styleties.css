@@ -3,6 +3,7 @@
 }
 
 .linkObject {
+    border-radius: 3rem;
     background-size: contain;
     background-image: rgba(255, 255, 255, 0.5);
 }
