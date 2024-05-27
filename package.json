@@ -1,0 +1,13 @@
+{
+  "name": "annotech",
+  "version": "1.0.0",
+  "description": "homepage for annotech",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiesnoordhuis/Annotech.git"
+  },
+  "author": "Ties"
+}
