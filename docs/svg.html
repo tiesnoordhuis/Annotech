@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #referenceImage {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            z-index: -1;
+            display: none;
+        }
+        svg:hover + #referenceImage {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <svg width="600" height="640" xmlns="http://www.w3.org/2000/svg" id="svg">
+        <!-- A -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1"
+            d=" M 65 540
+                l 255 -510
+                l 0 510
+                M 178 316
+                l 217 0">
+            <animate id="letterA" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" />
+        </path>
+
+        <!-- N -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 68 540
+                l 255 -510
+                l 0 510
+                l 255 -510">
+            <set attributeName="visibility" to="visible" begin="letterA.end+1s" />
+            <animate id="letterN1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterA.end+1s" />
+        </path>
+
+        <!-- N -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 71 540
+                l 255 -510
+                l 0 510
+                l 255 -510">
+            <set attributeName="visibility" to="visible" begin="letterA.end+1s" />
+            <animate id="letterN2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterN1.end+1s" />
+        </path>
+    
+        <!-- O -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 74 540
+                l 255 -510
+                l 255 0
+                l -255 510
+                l -255 0">
+            <set attributeName="visibility" to="visible" begin="letterN2.end+1s" />
+            <animate id="letterO" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterN2.end+1s" />
+        </path>
+
+        <!-- T -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 178 313
+                l 217 0
+                M 329 313
+                l 0 227">
+            <set attributeName="visibility" to="visible" begin="letterO.end+1s" />
+            <animate id="letterT" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterO.end+1s" />
+        </path>
+
+        <!-- E -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 77 540
+                l 255 -513
+                l 255 0
+                M 178 310
+                l 217 0
+                M 77 537
+                l 255 0">
+            <set attributeName="visibility" to="visible" begin="letterT.end+1s" />
+            <animate id="letterE" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterT.end+1s" />
+        </path>
+    </svg>
+    <img src="img/anno_tech_logo_blauw_transparant.png" alt="" id="referenceImage" width="600">
+    <button id="reset">Reset</button>
+    <script>
+        const button = document.getElementById('reset');
+        button.addEventListener('click', () => {
+            const svg = document.getElementById('svg');
+            const newSVG = svg.cloneNode(true);
+            svg.parentNode.replaceChild(newSVG, svg);
+        })
+    </script>
+</body>
+
+</html>
