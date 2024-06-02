@@ -24,10 +24,14 @@
         <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1"
             d=" M 65 540
                 l 255 -510
-                l 0 510
-                M 178 316
+                l 0 510">
+            <animate id="letterA1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" />
+        </path>
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 178 316
                 l 217 0">
-            <animate id="letterA" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" />
+            <set attributeName="visibility" to="visible" begin="letterA1.end"/>
+            <animate id="letterA2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterA1.end"/>
         </path>
 
         <!-- N -->
@@ -36,8 +40,8 @@
                 l 255 -510
                 l 0 510
                 l 255 -510">
-            <set attributeName="visibility" to="visible" begin="letterA.end+1s" />
-            <animate id="letterN1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterA.end+1s" />
+            <set attributeName="visibility" to="visible" begin="letterA2.end+1s" />
+            <animate id="letterN1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterA2.end+1s" />
         </path>
 
         <!-- N -->
@@ -46,7 +50,7 @@
                 l 255 -510
                 l 0 510
                 l 255 -510">
-            <set attributeName="visibility" to="visible" begin="letterA.end+1s" />
+            <set attributeName="visibility" to="visible" begin="letterN1.end+1s" />
             <animate id="letterN2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterN1.end+1s" />
         </path>
     
@@ -64,24 +68,59 @@
         <!-- T -->
         <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
             d=" M 178 313
-                l 217 0
-                M 329 313
-                l 0 227">
+                l 217 0">
             <set attributeName="visibility" to="visible" begin="letterO.end+1s" />
-            <animate id="letterT" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterO.end+1s" />
+            <animate id="letterT1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterO.end+1s" />
+        </path>
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 329 313
+                l 0 227">
+            <set attributeName="visibility" to="visible" begin="letterT1.end" />
+            <animate id="letterT2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterT1.end" />
         </path>
 
         <!-- E -->
         <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
             d=" M 77 540
-                l 255 -513
-                l 255 0
-                M 178 310
-                l 217 0
-                M 77 537
+                l 255 -513">
+            <set attributeName="visibility" to="visible" begin="letterT2.end+1s" />
+            <animate id="letterE1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterT2.end+1s" />
+        </path>
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 77 537
                 l 255 0">
-            <set attributeName="visibility" to="visible" begin="letterT.end+1s" />
-            <animate id="letterE" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterT.end+1s" />
+            <set attributeName="visibility" to="visible" begin="letterE1.end" />
+            <animate id="letterE2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterE1.end" />
+        </path>
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 178 310
+                l 217 0">
+            <set attributeName="visibility" to="visible" begin="letterE2.end" />
+            <animate id="letterE3" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterE2.end" />
+        </path>
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 332 27
+                l 255 0">
+            <set attributeName="visibility" to="visible" begin="letterE3.end" />
+            <animate id="letterE4" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterE3.end" />
+        </path>
+
+        <!-- C -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 335 534
+                l -252 0
+                l 252 -510
+                l 255 0">
+            <set attributeName="visibility" to="visible" begin="letterE4.end+1s" />
+            <animate id="letterC" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterE4.end+1s" />
+        </path>
+
+        <!-- H -->
+        <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden"
+            d=" M 80 534
+                l 252 -510">
+            <set attributeName="visibility" to="visible" begin="letterC.end+1s" />
+            <animate id="letterH1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0" begin="letterC.end+1s" />
         </path>
     </svg>
     <img src="img/anno_tech_logo_blauw_transparant.png" alt="" id="referenceImage" width="600">
