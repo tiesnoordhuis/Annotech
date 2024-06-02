@@ -1,6 +1,6 @@
-.carousel-item > img {
+.carousel-item > * {
   width: 100%;
-  height: min(calc(calc(100vh - 100px) * 0.8), 500px);
+  height: 640px;
   object-fit: contain;
 }
 
