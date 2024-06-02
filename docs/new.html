@@ -45,8 +45,152 @@
       <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="img/anno_tech_logo_blauw_transparant.png" class="d-block mb-5" alt="annotech logo">
+      <div class="carousel-item active" data-bs-interval="10000" id="carousel-item-svg">
+        <div class="d-flex justify-content-center  mb-5">
+          <svg width="600" height="640" xmlns="http://www.w3.org/2000/svg" id="svg" class="d-block"
+            alt="annotech logo">
+            <g opacity="1" id="animatedLogo">
+              <!-- A -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" d=" M 65 540
+                        l 255 -511.5
+                        l .2 0
+                        l 0 511.5">
+                <animate id="letterA1" attributeName="stroke-dashoffset" dur="1.6s" fill="freeze" from="1" to="0" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 178 315.8
+                        l 217 0">
+                <set attributeName="visibility" to="visible" begin="letterA1.end" />
+                <animate id="letterA2" attributeName="stroke-dashoffset" dur="0.4s" fill="freeze" from="1" to="0"
+                  begin="letterA1.end" />
+              </path>
+
+              <!-- N -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 68 540
+                        l 255 -511.5
+                        l 0 511.5
+                        l 255 -510">
+                <set attributeName="visibility" to="visible" begin="letterA2.end+1s" />
+                <animate id="letterN1" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0"
+                  begin="letterA2.end+1s" />
+              </path>
+
+              <!-- N -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 71 540
+                        l 255 -511.5
+                        l -0.2 0
+                        l 0 511.5
+                        l 255 -510">
+                <set attributeName="visibility" to="visible" begin="letterN1.end+1s" />
+                <animate id="letterN2" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0"
+                  begin="letterN1.end+1s" />
+              </path>
+
+              <!-- O -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 74 540
+                        l 255 -511.5
+                        l 255 0
+                        l -255 511.5
+                        l -264 0">
+                <set attributeName="visibility" to="visible" begin="letterN2.end+1s" />
+                <animate id="letterO" attributeName="stroke-dashoffset" dur="2s" fill="freeze" from="1" to="0"
+                  begin="letterN2.end+1s" />
+              </path>
+
+              <!-- T -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 181 313
+                        l 214 0">
+                <set attributeName="visibility" to="visible" begin="letterO.end+1s" />
+                <animate id="letterT1" attributeName="stroke-dashoffset" dur="0.6s" fill="freeze" from="1" to="0"
+                  begin="letterO.end+1s" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 328.6 313
+                        l 0 227">
+                <set attributeName="visibility" to="visible" begin="letterT1.end" />
+                <animate id="letterT2" attributeName="stroke-dashoffset" dur="0.6s" fill="freeze" from="1" to="0"
+                  begin="letterT1.end" />
+              </path>
+
+              <!-- E -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 77 540
+                        l 255 -513">
+                <set attributeName="visibility" to="visible" begin="letterT2.end+1s" />
+                <animate id="letterE1" attributeName="stroke-dashoffset" dur="1s" fill="freeze" from="1" to="0"
+                  begin="letterT2.end+1s" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 77 537
+                        l 253 0">
+                <set attributeName="visibility" to="visible" begin="letterE1.end" />
+                <animate id="letterE2" attributeName="stroke-dashoffset" dur="0.7s" fill="freeze" from="1" to="0"
+                  begin="letterE1.end" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 181 310.2
+                        l 214 0">
+                <set attributeName="visibility" to="visible" begin="letterE2.end" />
+                <animate id="letterE3" attributeName="stroke-dashoffset" dur="0.7s" fill="freeze" from="1" to="0"
+                  begin="letterE2.end" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 321 27.1
+                        l 264 0">
+                <set attributeName="visibility" to="visible" begin="letterE3.end" />
+                <animate id="letterE4" attributeName="stroke-dashoffset" dur="0.7s" fill="freeze" from="1" to="0"
+                  begin="letterE3.end" />
+              </path>
+
+              <!-- C -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 330 534.4
+                        l -247 0
+                        l 252 -510
+                        l -14 0
+                        l 266 0">
+                <set attributeName="visibility" to="visible" begin="letterE4.end+1s" />
+                <animate id="letterC" attributeName="stroke-dashoffset" dur="1.8s" fill="freeze" from="1" to="0"
+                  begin="letterE4.end+1s" />
+              </path>
+
+              <!-- H -->
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 86 534
+                        l 252 -510">
+                <set attributeName="visibility" to="visible" begin="letterC.end+1s" />
+                <animate id="letterH1" attributeName="stroke-dashoffset" dur="0.8s" fill="freeze" from="1" to="0"
+                  begin="letterC.end+1s" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 181 307.6
+                        l 214 0">
+                <set attributeName="visibility" to="visible" begin="letterH1.end" />
+                <animate id="letterH2" attributeName="stroke-dashoffset" dur="0.4s" fill="freeze" from="1" to="0"
+                  begin="letterH1.end" />
+              </path>
+              <path stroke="rgb(0, 25, 121)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1"
+                stroke-dashoffset="1" fill="none" pathLength="1" visibility="hidden" d=" M 332 540
+                        l 257 -516">
+                <set attributeName="visibility" to="visible" begin="letterH2.end" />
+                <animate id="letterH3" attributeName="stroke-dashoffset" dur="0.8s" fill="freeze" from="1" to="0"
+                  begin="letterH2.end" />
+              </path>
+              <animate id="animatedLogoFadeOut" attributeName="opacity" dur="1s" fill="freeze" from="1" to="0"
+                begin="letterH3.end" />
+            </g>
+            <g id="staticLogo" opacity="0">
+              <image href="img/anno_tech_logo_blauw_transparant.png" height="640" width="100%"/>
+              <animate id="staticLogoFadeIn" attributeName="opacity" dur="1s" fill="freeze" from="0" to="1"
+                begin="animatedLogoFadeOut.begin+.05s" />
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="img/rolas.jpg" class="d-block mb-5" alt="rolas logo">
@@ -75,82 +219,86 @@
           zware industrie.
         <ul class="list-group">
           <li class="list-group-item fw-bold">
-            <span
-              class="badge p-1 bg-primary border border-light rounded-circle">
+            <span class="badge p-1 bg-primary border border-light rounded-circle">
               <span class="visually-hidden">dot</span>
-            </span>&nbsp;Gespecialiseerd laswerk</li>
+            </span>&nbsp;Gespecialiseerd laswerk
+          </li>
           <li class="list-group-item fw-bold">
-            <span
-              class="badge p-1 bg-primary border border-light rounded-circle">
+            <span class="badge p-1 bg-primary border border-light rounded-circle">
               <span class="visually-hidden">dot</span>
-            </span>&nbsp;Gespecialiseerd in toepassing van slijtvaste materialen</li>
+            </span>&nbsp;Gespecialiseerd in toepassing van slijtvaste materialen
+          </li>
           <li class="list-group-item fw-bold">
-            <span
-              class="badge p-1 bg-primary border border-light rounded-circle">
+            <span class="badge p-1 bg-primary border border-light rounded-circle">
               <span class="visually-hidden">dot</span>
-            </span>&nbsp;Productie en onderhoud van machines</li>
+            </span>&nbsp;Productie en onderhoud van machines
+          </li>
           <li class="list-group-item fw-bold">
-            <span
-              class="badge p-1 bg-primary border border-light rounded-circle">
+            <span class="badge p-1 bg-primary border border-light rounded-circle">
               <span class="visually-hidden">dot</span>
-            </span>&nbsp;Uitvoeren van grotere totaal projecten inclusief projectmanagement</li>
+            </span>&nbsp;Uitvoeren van grotere totaal projecten inclusief projectmanagement
+          </li>
           <li class="list-group-item fw-bold">
-            <span
-              class="badge p-1 bg-primary border border-light rounded-circle">
+            <span class="badge p-1 bg-primary border border-light rounded-circle">
               <span class="visually-hidden">dot</span>
             </span>&nbsp;Onderhoud op basis van contract of offerte, in
-            werkplaats en op locatie</li>
+            werkplaats en op locatie
+          </li>
         </ul>
         </p>
         <h2 class="text-center mt-5">Onze bedrijven</h2>
       </div>
     </div>
   </div>
-  <section class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 align-items-stretch">
-    <div class="col">
-      <article class="card m-3 h-100" id="Rolas">
-        <img src="img/rolas.jpg" class="card-img-top" alt="Rolas">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <h5 class="card-title">Rolas</h5>
-          <p class="card-text">Rolas B.V. is een mechanisch bedrijf dat al meer dan 65 jaar actief is in de regio
-            Rijnmond en IJmond, gespecialiseerd in constructie, revisie, montage en onderhoud. Ze voeren
-            multidisciplinaire projecten uit en werken met slijtvaste materialen, waarbij ze zich richten op fabricage
-            van onder andere bruggen, industriële installaties en kunstobjecten. Het bedrijf biedt ook montage- en
-            revisiediensten voor industriële apparatuur en hecht grote waarde aan kwaliteit en veiligheid</p>
-          <a href="https://www.rolas.nl/" class="btn btn-primary ">Bezoek Website</a>
-        </div>
-      </article>
-    </div>
-    <div class="col">
-      <article class="card m-3 h-100" id="OT">
-        <img src="img/ot-industries.png" class="card-img-top" alt="OT-industries">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <h5 class="card-title">OT-industries</h5>
-          <p class="card-text">OT Industries, gevestigd in Wieringerwerf, is een veelzijdig bedrijf dat gespecialiseerd
-            is in las- en constructiewerk met meer dan 20 jaar ervaring. Ze bieden een breed scala aan diensten,
-            waaronder slijtvast constructiewerk, oplaswerk, en diverse laswerkzaamheden met staal, aluminium en
-            roestvrij staal. Hun expertise omvat zowel nieuwbouw als revisie en ombouw van bestaande installaties,
-            waarbij ze gebruik maken van hoogwaardige en slijtvaste materialen. OT Industries werkt voor diverse
-            sectoren, waaronder staalproductie, agrarische industrie, en bulkgoederenverwerking</p>
-          <a href="https://www.ot-industries.com/" class="btn btn-primary ">Bezoek Website</a>
-        </div>
-      </article>
-    </div>
-    <div class="col">
-      <article class="card m-3 h-100" id="Haprotech">
-        <img src="img/logo-haprotech-dsktp.svg" class="card-img-top" alt="Haprotech">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <h5 class="card-title">Haprotech</h5>
-          <p class="card-text">Haprotech, gevestigd in Velsen-Noord, is een toonaangevend lasopleidingsinstituut dat
-            sinds 1990 hoogwaardige lasopleidingen biedt. Het instituut biedt dag- en avondopleidingen in diverse
-            lastechnieken zoals TIG, MIG, MAG, autogeen en elektrode lassen, en staat bekend om zijn praktijkgerichte
-            benadering en ervaren docenten. Naast opleidingen biedt Haprotech ook maatwerkoplossingen en uitgebreide
-            consultancy diensten op locatie. Met een focus op kennis en kunde, blijft Haprotech een betrouwbare partner
-            in de las- en snijtechniek</p>
-          <a href="https://www.haprotech.nl/" class="btn btn-primary ">Bezoek Website</a>
-        </div>
-      </article>
-  </section>
+  <div class="container">
+    <section class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 align-items-stretch">
+      <div class="col">
+        <article class="card m-3 h-100" id="Rolas">
+          <img src="img/rolas.jpg" class="card-img-top" alt="Rolas">
+          <div class="card-body d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title">Rolas</h5>
+            <p class="card-text">Rolas B.V. is een mechanisch bedrijf dat al meer dan 65 jaar actief is in de regio
+              Rijnmond en IJmond, gespecialiseerd in constructie, revisie, montage en onderhoud. Ze voeren
+              multidisciplinaire projecten uit en werken met slijtvaste materialen, waarbij ze zich richten op fabricage
+              van onder andere bruggen, industriële installaties en kunstobjecten. Het bedrijf biedt ook montage- en
+              revisiediensten voor industriële apparatuur en hecht grote waarde aan kwaliteit en veiligheid</p>
+            <a href="https://www.rolas.nl/" class="btn btn-primary ">Bezoek Website</a>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card m-3 h-100" id="OT">
+          <img src="img/ot-industries.png" class="card-img-top" alt="OT-industries">
+          <div class="card-body d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title">OT-industries</h5>
+            <p class="card-text">OT Industries, gevestigd in Wieringerwerf, is een veelzijdig bedrijf dat
+              gespecialiseerd
+              is in las- en constructiewerk met meer dan 20 jaar ervaring. Ze bieden een breed scala aan diensten,
+              waaronder slijtvast constructiewerk, oplaswerk, en diverse laswerkzaamheden met staal, aluminium en
+              roestvrij staal. Hun expertise omvat zowel nieuwbouw als revisie en ombouw van bestaande installaties,
+              waarbij ze gebruik maken van hoogwaardige en slijtvaste materialen. OT Industries werkt voor diverse
+              sectoren, waaronder staalproductie, agrarische industrie, en bulkgoederenverwerking</p>
+            <a href="https://www.ot-industries.com/" class="btn btn-primary ">Bezoek Website</a>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="card m-3 h-100" id="Haprotech">
+          <img src="img/logo-haprotech-dsktp.svg" class="card-img-top" alt="Haprotech">
+          <div class="card-body d-flex flex-column align-items-center justify-content-between">
+            <h5 class="card-title">Haprotech</h5>
+            <p class="card-text">Haprotech, gevestigd in Velsen-Noord, is een toonaangevend lasopleidingsinstituut dat
+              sinds 1990 hoogwaardige lasopleidingen biedt. Het instituut biedt dag- en avondopleidingen in diverse
+              lastechnieken zoals TIG, MIG, MAG, autogeen en elektrode lassen, en staat bekend om zijn praktijkgerichte
+              benadering en ervaren docenten. Naast opleidingen biedt Haprotech ook maatwerkoplossingen en uitgebreide
+              consultancy diensten op locatie. Met een focus op kennis en kunde, blijft Haprotech een betrouwbare
+              partner
+              in de las- en snijtechniek</p>
+            <a href="https://www.haprotech.nl/" class="btn btn-primary ">Bezoek Website</a>
+          </div>
+        </article>
+    </section>
+  </div>
   <nav class="navbar bg-body-tertiary mt-5">
     <div class="container-fluid">
       <span class="navbar-text">
